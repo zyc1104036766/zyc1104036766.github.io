@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+<title>健康平台学生请假系统</title>
+<style type="text/css">
+body{margin: 0px;}
+a{color: #696969; text-decoration: none;}	
+input{border: 1px solid #ddd;border-radius: 5px;padding: 5px;}
+input:hover{border:1px solid #1E90FF; color:#1E90FF;}
+input:focus{border:1px solid #1E90FF; color:#1E90FF;}
+</style>
+
+<body>
+<div >
+<div style="background:	#233c73;"><div style="margin-left: 12px;"><img src="logo.png" /></div></div>
+
+
+<div style="font-style: 21px;line-height: 40px;border-bottom:2px solid #ddd;">&nbsp&nbsp&nbsp<a href="4.html"><img src="left.svg" width="18px" /></a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp请假条详情</div>
+<div style="padding-top:20px;padding-bottom: 20px;text-align: right;width: 320px;">
+  <div style="margin-bottom: 10px;">账号&nbsp&nbsp<input type="text" value="201912302013871"></div>
+  <div style="margin-bottom: 20px;">姓名&nbsp&nbsp<input type="text" value="张亦驰"></div>
+  <div style="margin-bottom: 10px;">联系方式&nbsp&nbsp<input type="text" value="18231021018"></div>
+  <div style="margin-bottom: 20px;">所在校区&nbsp&nbsp<input type="text" value="主校区"></div>
+  <div style="margin-bottom: 10px;">辅导员&nbsp&nbsp<input type="text" value="李俊杰"></div>
+  <div style="margin-bottom: 30px;">导师&nbsp&nbsp<input type="text" value="崔庆安"></div>
+  <div style="margin-bottom: 30px;">
+    <form action="" method="get">
+      请假类型&nbsp<label><input type="radio" name="thing" value=""checked/>事假</label>
+      <form action="" method="get">
+      <label><input type="radio" name="thing" value=""/>病假</label>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</form>
+</div>
+  <div style="margin-bottom: 10px;">开始日期&nbsp&nbsp<span style="border: 1px solid #ddd;border-radius: 5px;padding: 3px;"><span style="font-size: 12px;"id="ymd"></span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span></div>
+  <div style="margin-bottom: 20px;">结束日期&nbsp&nbsp<span style="border: 1px solid #ddd;border-radius: 5px;padding: 3px;"><span style="font-size: 12px;"id="ymd1"></span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span></div>
+  <div style="margin-bottom: 10px;">出行方式&nbsp&nbsp<input type="text" value="市内公共交通"></div>
+  <div style="margin-bottom: 10px;">外出地址&nbsp&nbsp<input type="text" value="河南"></div>
+  <div style="margin-bottom: 10px;"><input type="text" value="郑州"></div>
+  <div style="margin-bottom: 20px;"><input type="text" value="二七"></div>
+  <div style="margin-bottom: 10px;"><span>请假事由&nbsp&nbsp</span><textarea style="resize: none;border: 1px solid #ddd;border-radius: 5px;padding: 3px;vertical-align:top;font-family: Microsoft YaHei;" rows="5" cols="22" >前往南校区交材料。</textarea></div>
+  <div style="margin-bottom: 10px;">审核状态&nbsp&nbsp<input type="text" value="销假已批准"></div>
+  <div style="margin-bottom: 10px;">审核时间&nbsp&nbsp<span style="border: 1px solid #ddd;border-radius: 5px;padding: 3px;"><span style="font-size: 12px;"id="ymd2"></span><span style="font-size: 12px;">12:47:36</span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span></div>
+  <div>
+  <span style="font-size: 12px;display: inline-block; color: #FFFFFF;width: 77px;text-align: left;height: 27px;line-height: 28px;margin-top: 10px; background: #00ccff; border-radius:3px;">&nbsp&nbsp已销假列表</span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+
+</div>
+</body >
+
+<script>
+        var date = new Date()
+        var y = date.getFullYear();
+        var m = date.getMonth()+1;
+        var d = date.getDate();
+        document.getElementById("ymd").innerHTML = y+"-"+m+"-"+d;
+
+        document.getElementById("ymd1").innerHTML = y+"-"+m+"-"+d;
+
+        document.getElementById("ymd2").innerHTML = y+"/"+m+"/"+d;
+    
+    
+    </script>  
+
+
+</html>
