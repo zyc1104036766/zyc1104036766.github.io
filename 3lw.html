@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+<title>健康平台学生请假系统</title>
+<style type="text/css">
+body{margin: 0px;}
+a{color: #FFFFFF; text-decoration: none;}	
+</style>
+
+<body>
+<div >
+<div style="background:	#233c73;"><div style="margin-left: 12px;"><img src="logo.png" /></div></div>
+
+
+<div style="font-style: 21px;line-height: 40px;border-bottom:2px solid #ddd;">&nbsp&nbsp&nbsp<a href="2lw.html"><img src="left.svg" width="18px" /></a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp请假列表</div>
+<div>
+	 <div style="font-size: 12px;display: inline-block; color: #FFFFFF;width: 65px;text-align: left;height: 27px;line-height: 28px;margin-top: 10px; background:	#0a8; border-radius:3px;">&nbsp&nbsp新增请假</div>&nbsp&nbsp
+	  <div style="font-size: 12px;display: inline-block; color: #FFFFFF;width: 77px;text-align: left;height: 27px;line-height: 28px;margin-top: 10px; background:	#0a8; border-radius:3px;"><a href="4lw.html">&nbsp&nbsp已销假列表</a></div>&nbsp&nbsp
+	   <div style="font-size: 12px;display: inline-block; color: #FFFFFF;width: 77px;text-align: left;height: 27px;line-height: 28px;margin-top: 10px; background:	#0a8; border-radius:3px;">&nbsp&nbsp被驳回列表</div>
+</div>
+<div style="font-style: 21px;line-height: 40px;margin-top: 10px;border-bottom:1px solid #ddd;border-top:1px solid #ddd;">
+	&nbsp&nbsp&nbsp开始日期&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 类型&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 状态
+</div>
+
+</div>
+</div>
+</body >
+
+<script>
+        var date = new Date()
+       
+        var m = date.getMonth()+1;
+        var d = date.getDate(); 
+        var t = fnW(m) + "月"
+          + fnW(d) + "日" ;
+
+        document.getElementById("md").innerHTML = t;
+        
+        function fnW(str) {
+      var num;
+      str >= 10 ? num = str : num = "0" + str;
+      return num;
+    }
+    
+    
+    </script>  
+
+
+</html>
