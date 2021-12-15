@@ -1,0 +1,169 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>jQuery+CSS3星云密布旋转背景动画特效</title>
+
+<script src="https://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+
+<style>
+body {
+  background: radial-gradient(200% 100% at bottom center, #f7f7b6, #e96f92, #75517d, #1b2947);
+  background: radial-gradient(220% 105% at top center, #1b2947 10%, #75517d 40%, #e96f92 65%, #f7f7b6);
+  background-attachment: fixed;
+  overflow: hidden;
+}
+
+@keyframes rotate {
+  0% {
+    transform: perspective(400px) rotateZ(20deg) rotateX(-40deg) rotateY(0);
+  }
+  100% {
+    transform: perspective(400px) rotateZ(20deg) rotateX(-40deg) rotateY(-360deg);
+  }
+}
+.stars {
+  transform: perspective(500px);
+  transform-style: preserve-3d;
+  position: absolute;
+  bottom: 0;
+  perspective-origin: 50% 100%;
+  left: 50%;
+  animation: rotate 90s infinite linear;
+}
+
+.star00 {
+  width: 2px;
+  height: 2px;
+  background: #F7F7B6;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform-origin: 0 0 -300px;
+  transform: translate3d(0, 0, -300px);
+  backface-visibility: hidden;
+}
+.table{
+	width: 400px;
+	height: 350px;
+	margin: 80px auto;
+}
+.table form{
+	width: 100%;
+}
+.table .name{
+	width: 280px;
+	margin: 20px auto 30px auto;
+	display: block;
+	height: 30px;
+	border-radius: 20px;
+	border: none;
+	background: rgba(0,0,0,0.2);
+	text-indent: 0.5em;
+}
+.table .btn{
+	width: 100px;
+	height: 30px;
+	background: rgba(0,0,0,0.1);
+	border-radius: 8px;
+	border: none;
+	color: white;
+	margin: 0 auto;
+	display: block;
+}
+.demo {
+      
+      width: 440px;
+      padding: 30px;
+      font: bold 55px/100% "微软雅黑", "Lucida Grande", "Lucida Sans", Helvetica, Arial, Sans;;
+      color: #fff;
+      text-transform: uppercase;
+}
+.demo1 {
+  color: #fff;
+  text-shadow: 1px 1px rgba(197, 223, 248,0.8),2px 2px rgba(197, 223, 248,0.8),3px 3px rgba(197, 223, 248,0.8),4px 4px rgba(197, 223, 248,0.8),5px 5px rgba(197, 223, 248,0.8),6px 6px rgba(197, 223, 248,0.8);text-align: center;
+}
+</style>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="stars"></div>  <!--背景层，不要删除，不然没有作用-->
+
+<div class="demo demo1">李雯雯专属圣诞树</div>
+<div class="container1">
+  <div class="tree">
+    <div class="shadow ts-3d"></div>
+    <div class="trunk ts-3d">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <div class="leaves-bottom ts-3d">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <div class="leaves-middle ts-3d">
+      <div class="ts-3d"></div>
+      <div class="ts-3d"></div>
+      <div class="ts-3d"></div>
+      <div class="ts-3d"></div>
+    </div>
+    <div class="leaves-top ts-3d">
+      <div class="ts-3d"></div>
+      <div class="ts-3d"></div>
+      <div class="ts-3d"></div>
+      <div class="ts-3d"></div>
+    </div>
+    <div class="star star-1 ts-3d"></div>
+    <div class="star star-2 ts-3d"></div>
+    <div class="star star-3 ts-3d"></div>
+    <div class="star star-4 ts-3d"></div>
+    <div class="star star-5 ts-3d"></div>
+    <div class="shine ts-3d"></div>
+  </div>
+  <div class="snow-container">
+    <div class="snow snow-1 snow-y-1"></div>
+    <div class="snow snow-2 snow-y-2"></div>
+    <div class="snow snow-3 snow-y-3"></div>
+    <div class="snow snow-4 snow-y-3"></div>
+    <div class="snow snow-5 snow-y-2"></div>
+    <div class="snow snow-6 snow-y-1"></div>
+    <div class="snow snow-7 snow-y-1"></div>
+    <div class="snow snow-8 snow-y-2"></div>
+    <div class="snow snow-9 snow-y-3"></div>
+    <div class="snow snow-10 snow-y-3"></div>
+  </div>
+</div>
+<div style="text-align:center;margin:50px 0; font:normal 14px/24px 'MicroSoft YaHei';">
+
+</div>
+
+<script>
+$(document).ready(function(){
+  var stars=800;  /*星星的密集程度，数字越大越多*/
+  var $stars=$(".stars");
+  var r=400;   /*星星的看起来的距离,值越大越远,可自行调制到自己满意的样子*/
+  for(var i=0;i<stars;i++){
+    var $star=$("<div/>").addClass("star00");
+    $stars.append($star);
+  }
+  $(".star00").each(function(){
+    var cur=$(this);
+    var s=0.2+(Math.random()*1);
+    var curR=r+(Math.random()*300);
+    cur.css({ 
+      transformOrigin:"0 0 "+curR+"px",
+      transform:" translate3d(0,0,-"+curR+"px) rotateY("+(Math.random()*360)+"deg) rotateX("+(Math.random()*-50)+"deg) scale("+s+","+s+")"
+       
+    })
+  })
+})
+</script>
+
+
+</body>
+</html>
