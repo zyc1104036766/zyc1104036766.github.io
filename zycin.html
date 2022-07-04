@@ -4,10 +4,9 @@
 
 </head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
-<title>郑州大学数据中台2021</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+<title>郑州大学数据中台2020</title>
 <style type="text/css">
-	
 	a{ text-decoration: none }
 	.a1{ width:100%;height:32%;line-height:30px;text-align:left; border-bottom:1px solid #DCDCDC; border-top:1px solid #DCDCDC;}
 
@@ -20,47 +19,45 @@
 	
 </style>
 
-<body style="margin-left: 3px;width:100%;text-align:center ">
+<body style="margin-left: 3px;width:100%">
 
-
+<div style="width:95%;height:95%">
 <div id="container" style="width:350px">  
-   <div style="width: 350px;height: 103px;background:"title.jpg");">
-     <div style="width:100%;height:32px;text-align:right;;font-size:12px">
+   <div style="width: 360px;height: 80px;background:url(title.jpg);background-size: 104% 108%;border-bottom:1px solid #DCDCDC;">
+     
+   </div>
+
+   <div style="font-family:黑体;font-size: 15px;color:#000099;font-weight: 600;line-height:24px;background:url(student.jpg);background-size: 100%;margin-bottom: 5px;margin-top: 5px;">
+   管理学院.张亦驰
       <a href="1.html"><span
-              style="color:#00c;">〖切换账号〗&nbsp&nbsp</span></a>
-     </div>
-   </div>
-   <div class="a1">
-  	  <div style="margin-bottom: 4px;">
-  	   <span
-            style="font-size:12px;color:#333;margin-top: 80px;">获取时间：</span><span
-            style="font-size:16px;color:#a0a;font-weight:500;font-family:黑体;" id="header-data"></span><span
-            style="font-size:12px;color:#333;;">&nbsp&nbsp&nbsp&nbsp&nbsp有效期剩余 </span><span id="tim317"
-            style="font-size:22px;color:#c00;font-weight:500;font-family:黑体;">9分45秒</span>
-      </div>  
-   </div> 
-   <div style="font-family:黑体;color:#00a;font-size:18px;font-weight: 500;margin-left:1em;line-height:24px">
-   管理工程学院&nbsp&nbsp&nbsp张亦驰<br>
-   通行信息：主校区大门东门.<span style="background-color:  #070; color: #ff0;">入口</span><br>
-   出入身份：请假被批准的学生[返校]
-   </div>
-   <div style="width: 306px;height: 306px;">
+              style="color:#00c;font-size: 11px;">〖切换账号〗&nbsp&nbsp</span></a>
+     <br>
+   主校区大门东门.<span style="background-color:  #469142; color: #FFFFFF;">入口</span><br>
+   身份：批准出入校园学生<span
+            style="font-size:11px;color:#383838 ">(</span><span
+            style="font-size:11px;color:#383838 ;"id="header-data"></span><span
+            style="font-size:11px;color:#383838 ;">获取) </span><br>
+            <span style="font-family:黑体;font-size:11px;color:#787878;">关注"郑州大学网络管理中心"微信公众号可提醒健康打卡</span>
+
+      </div> 
+     
+      </div>
+   <div style="width: 300px;height: 280px;">
    <div class="border"s
-          style="width:100%;min-height:25px;line-height:25px;font-size:14px;color:#333;border: 24px solid #090 !important;text-align:center;">
+          style="width:110%;min-height:15px;line-height:25px;font-size:14px;color:#333;border: 13px solid #469142 !important;text-align:center;">
           <img src="photozyc.jpg"
-            style="height:300px;border:0px;margin-bottom: -8px;">
+            style="height:280px;border:0px;margin-bottom: -8px;">
+          
     </div>
 
-
-   
-   </div>
- <div style="position:relative;margin-top:44px;border-top:1px solid #DCDCDC;font-size:12px;color:#696969;text-align:center;line-height: 18px;">郑州大学疫情防控领导小组、保卫处、信息化办公室</div>
-   <div style="position:relative;font-size:12px;text-align:center;line-height: 18px;"><span style="color:#696969;">定位：河南郑州附近&nbsp&nbsp&nbsp（</span><span style="color:#009900">扫码在期望区域内</span><span style="color:#696969;">）</span></div>
+   </div> 
+<div style="width:350px;margin-top:30px;margin-left: 5px;border-top:1px solid #DCDCDC;font-size:12px;color:#808080;text-align:center;line-height: 18px;">郑州大学疫情防控领导小组、保卫处、信息化办公室</div>
+<div style="width: 350px;margin-left: 5px;font-size:12px;text-align:center;line-height: 18px;"><span style="color:#696969;">定位：河南郑州附近&nbsp&nbsp&nbsp（</span><span style="color:#009900">扫码在期望区域内</span><span style="color:#696969;">）</span></div>
 
 
 </div>
 
-
+</div>
 </body >
 
 <script language="javascript">
@@ -123,3 +120,70 @@
 
 </html>
 
+
+
+   
+ 
+
+
+</body >
+
+<script language="javascript">
+    window.onload = function () {
+      //获取元素id
+      var show = document.getElementById("header-data");
+      //设置定时器1s执行一次
+      setInterval(function () {
+        var time = new Date();   // 程序计时的月从0开始取值后+1
+        var m = time.getMonth() + 1;
+        d = time.getDate()
+        h = time.getHours()
+        f = time.getMinutes()
+        var t = fnW(m) + "月"
+          + fnW(d) + "日" + " " + fnW(h) + ":"
+          + fnW(f)
+        show.innerHTML = t;
+      }, 1000);
+    };
+    //补位 当某个字段不是两位数时补0
+    function fnW(str) {
+      var num;
+      str >= 10 ? num = str : num = "0" + str;
+      return num;
+    }
+    function zzjCallOneUrl(us) {
+      document.getElementById("zzj_fun_426s").src = us;
+    }
+    var timeID = 0;
+    var tt1 = 600;
+    tt2 = 0;
+    tt3 = 0;
+    var timeID = setInterval("hnceTimer()", 1000);
+    function hnceTimer() {
+
+      tt1--;
+      if (tt1 >= 0) {
+        tt2 = tt1 % 60;
+        tt3 = (tt1 - tt2) / 60;
+        document.getElementById("tim317").innerHTML = tt3 + "分" + tt2 + "秒";
+      } else { document.getElementById("tim317").innerHTML = "已作废"; }
+    }
+    
+ var border = document.querySelector(".border");
+ var time = 0;
+ var colors= ["#cef5d0","#469142"];
+  let   timer = setInterval(() => {
+    border.style.borderColor =colors[time];
+    time++
+    if (time>colors.length-1){time=0}
+
+        
+    },1000)
+
+
+      
+
+</script>    
+
+
+</html>
