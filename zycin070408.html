@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+<title>郑州大学数据中台2021</title>
+ <link rel="stylesheet" href="./style.css">
+<style type="text/css">
+	a{ text-decoration: none }
+	.a1{ width:100%;height:32%;line-height:30px;text-align:left; border-bottom:1px solid #DCDCDC; }
+
+  @media screen and (height: 50px) {
+    body {}
+        
+    } 
+ .iframe-body-sty{position: relative;overflow: hidden;height:80px;width:370px;margin-top: -29px;margin-left: -48px;}
+  .iframe-body-sty>#iframe-shrink{position: absolute;transform:scale(0.6,0.55);left: -40px;top: -40px; }
+
+       
+	
+</style>
+
+<body style="margin-left: 3px;width:100%;border-top:0px">
+
+<div style="width:95%;height:95%">
+<div id="container" style="width:340px">  
+   <div style="width: 350px;height: 80px;background:url(title.jpg);background-size: 104% 108%; border-bottom:1px solid #DCDCDC;border-top:0px">
+     
+   </div>
+
+   <div style="font-family:黑体;font-size: 14px;color:#000099;font-weight: 600;line-height:24px;background:url(student.jpg);background-size: 100%;margin-bottom: 5px;margin-top: 5px;">
+   管理学院.张亦驰
+      <a href="1.html"><span
+              style="color:#00c;font-size: 10px;">〖切换账号〗&nbsp&nbsp</span></a>
+     <br>
+   主校区大门东门.<span style="background-color:  #469142; color: #FFFFFF;">入口</span><br>
+   身份：批准出入校园学生<span
+            style="font-size:10px;color:#383838 ">(</span><span
+            style="font-size:10px;color:#383838 ;"id="header-data"></span><span
+            style="font-size:10px;color:#383838 ;">获取) </span><br>
+            <span style="font-family:黑体;font-size:10px;color:#787878;">关注"郑州大学网络管理中心"微信公众号可提醒健康打卡</span>
+
+      </div> 
+     
+      </div>
+   <div style="width: 285px;height: 250px;">
+   <div class="border"s
+          style="width:110%;min-height:15px;line-height:25px;font-size:14px;color:#333;border: 15px solid #469142 !important;text-align:center;">
+          <img src="photozyc.jpg"
+            style="height:250px;border:0px;margin-bottom: -8px;">
+          
+    </div>
+
+   </div> 
+
+
+ <div style="width: 340px;height: 70px;margin-top: 36px;background-color: #009929;text-align: center;font-family: 黑体;font-size: 20px;font-size: 600;color: #ffff;"><br><br>郑州大学主校区
+ </div> 
+
+    <div style="width: 340px;height: 90px;background-color: #009929;">
+      
+        
+
+    <svg class="editorial"
+         xmlns="http://www.w3.org/2000/svg"
+         xmlns:xlink="http://www.w3.org/1999/xlink"
+         viewBox="0 20 230 50"
+         preserveAspectRatio="none" >
+        <defs>
+            <path id="gentle-wave"
+                  d="M-160 44c30 0
+    58-18 88-18s
+    58 18 88 18
+    58-18 88-18
+    58 18 88 18
+    v44h-352z" fill-opacity="0.4"/>
+        </defs>
+        <g class="parallax">
+            <use xlink:href="#gentle-wave" x="80" y="0" fill="#35ba63" />
+            <use xlink:href="#gentle-wave" x="80" y="3" fill="#35ba63" />
+           
+        </g>
+    </svg>
+    <div>
+    <img style="width:340px;height: 280px ;margin-top: -70px;" src="back1.png"></div>
+     
+</div>
+
+
+<div style="margin-top:-35px ;font-size:16px;color: #707070 ;font-family: 黑体;width: 340px;height:30px;text-align: center;">2022年7月8日</div>
+<div class="iframe-body-sty">
+<iframe id="iframe-shrink" src="index.html" width="500px" height="200px"frameborder= "0";>
+  
+</iframe>
+</div>
+
+<div style="width: 330px;margin-left: 20px;margin-top: 20px;font-size:20px;font-family: 黑体;font-weight: 600;text-align:left;line-height: 18px;">张*驰</div>
+
+
+</div>
+
+</div>
+</body >
+
+<script language="javascript">
+    window.onload = function () {
+      //获取元素id
+      var show = document.getElementById("header-data");
+      //设置定时器1s执行一次
+      setInterval(function () {
+        var time = new Date();   // 程序计时的月从0开始取值后+1
+        var m = time.getMonth() + 1;
+        d = time.getDate()
+        h = time.getHours()
+        f = time.getMinutes()
+        var t = fnW(m) + "月"
+          + fnW(d) + "日" + " " + fnW(h) + ":"
+          + fnW(f)
+        show.innerHTML = t;
+      }, 1000);
+    };
+    //补位 当某个字段不是两位数时补0
+    function fnW(str) {
+      var num;
+      str >= 10 ? num = str : num = "0" + str;
+      return num;
+    }
+    function zzjCallOneUrl(us) {
+      document.getElementById("zzj_fun_426s").src = us;
+    }
+    var timeID = 0;
+    var tt1 = 600;
+    tt2 = 0;
+    tt3 = 0;
+    var timeID = setInterval("hnceTimer()", 1000);
+    function hnceTimer() {
+
+      tt1--;
+      if (tt1 >= 0) {
+        tt2 = tt1 % 60;
+        tt3 = (tt1 - tt2) / 60;
+        document.getElementById("tim317").innerHTML = tt3 + "分" + tt2 + "秒";
+      } else { document.getElementById("tim317").innerHTML = "已作废"; }
+    }
+    
+ var border = document.querySelector(".border");
+ var time = 0;
+ var colors= ["#bfffc8","#090"];
+  let   timer = setInterval(() => {
+    border.style.borderColor =colors[time];
+    time++
+    if (time>colors.length-1){time=0}
+
+        
+    },1000)
+
+
+      
+
+</script>    
+
+
+</html>
+
+
+
+   
+ 
+
+
+</body >
+
+ 
+
+
+</html>
