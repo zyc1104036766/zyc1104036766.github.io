@@ -8,6 +8,7 @@
 }
 .parallax > use:nth-child(1) {
   animation-delay: -2s;
+  animation-duration: 3s;
 }
 .parallax > use:nth-child(2) {
   animation-delay: -2s;
