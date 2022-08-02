@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=0.95 maximum-scale=0.95, minimum-scale=0.95, user-scalable=no, ">
+<title>郑州大学数据中台2021</title>
+ <link rel="stylesheet" href="./style.css">
+<style type="text/css">
+	a{ text-decoration: none }
+	.a1{ width:100%;height:32%;line-height:30px;text-align:left; border-bottom:1px solid #DCDCDC; }
+
+  @media screen and (height: 50px) {
+    body {}
+        
+    } 
+ .iframe-body-sty{position: relative;overflow: hidden;height:80px;width:370px;margin-top: -29px;margin-left: -48px;}
+  .iframe-body-sty>#iframe-shrink{position: absolute;transform:scale(0.6,0.55);left: -40px;top: -40px; }
+
+       
+	
+</style>
+
+<body style="width:100%;height: 100%;margin-left:38px;border-top:0px;overflow:auto">
+
+<div style="width:95%;height:100%;">
+<div id="container" style="width:340px">  
+   <div style="width: 350px;height: 90px;background:url(title3.jpg);background-size: 104% 108%; border-bottom:1px solid #DCDCDC;border-top:0px">
+     
+   </div>
+
+   <div style="font-family:黑体;font-size: 16px;color:#000099;font-weight: 600;line-height:24px;background:url(student.jpg);background-size: 101%;margin-bottom: 5px;margin-top: 5px;">
+   管理学院.张亦驰
+      <a href="1.html"><span
+              style="color:#00c;font-size: 12px;">〖切换账号〗&nbsp&nbsp</span></a>
+     <br>
+   主校区大门东门.<span style="background-color:  #c0c; color: #ff0;">出口</span><br>
+   身份：批准出入校园学生<span
+            style="font-size:12px;color:#383838 ">(</span><span
+            style="font-size:12px;color:#383838 ;"id="header-data"></span><span
+            style="font-size:12px;color:#383838 ;">获取) </span><br>
+            <span style="font-family:黑体;font-size:12px;color: #787878;">关注"郑州大学网络管理中心"微信公众号可提醒健康打卡</span>
+
+      </div> 
+     
+      </div>
+   <div style="width: 285px;height: 275px;">
+   <div class="border"s
+          style="width:110%;height: 100%;min-height:15px;line-height:25px;font-size:14px;color:#333;border: 15px solid #9999ff !important;text-align:center;">
+          <img src="photozyc.jpg"
+            style="width: 200px;height:275px;border:0px;margin-bottom: 0px;">
+          
+    </div>
+
+<div style="width:340px;margin-top:5px;margin-left: 2px;border-top:1px solid #DCDCDC;font-size:12px;color:#808080;text-align:center;line-height: 18px;">郑州大学疫情防控领导小组、保卫处、信息化办公室</div>
+<div style="width: 350px;margin-left: 5px;font-size:12px;text-align:center;line-height: 18px;"><span style="color:#696969;">定位：河南郑州附近&nbsp&nbsp&nbsp（</span><span style="color:#009900">扫码在期望区域内</span><span style="color:#696969;">）</span></div>
+
+   </div> 
+
+
+ 
+
+
+
+
+</div>
+
+
+
+
+</body >
+
+<script language="javascript">
+    window.onload = function () {
+      //获取元素id
+      var show = document.getElementById("header-data");
+      //设置定时器1s执行一次
+      setInterval(function () {
+        var time = new Date();   // 程序计时的月从0开始取值后+1
+        var m = time.getMonth() + 1;
+        d = time.getDate()
+        h = time.getHours()
+        f = time.getMinutes()
+        var t = fnW(m) + "月"
+          + fnW(d) + "日" + " " + fnW(h) + ":"
+          + fnW(f)
+        show.innerHTML = t;
+      }, 1000);
+    };
+    //补位 当某个字段不是两位数时补0
+    function fnW(str) {
+      var num;
+      str >= 10 ? num = str : num = "0" + str;
+      return num;
+    }
+    function zzjCallOneUrl(us) {
+      document.getElementById("zzj_fun_426s").src = us;
+    }
+    var timeID = 0;
+    var tt1 = 600;
+    tt2 = 0;
+    tt3 = 0;
+    var timeID = setInterval("hnceTimer()", 1000);
+    function hnceTimer() {
+
+      tt1--;
+      if (tt1 >= 0) {
+        tt2 = tt1 % 60;
+        tt3 = (tt1 - tt2) / 60;
+        document.getElementById("tim317").innerHTML = tt3 + "分" + tt2 + "秒";
+      } else { document.getElementById("tim317").innerHTML = "已作废"; }
+    }
+    
+ var border = document.querySelector(".border");
+ var time = 0;
+ var colors= ["#0012ff","#9999ff"];
+  let   timer = setInterval(() => {
+    border.style.borderColor =colors[time];
+    time++
+    if (time>colors.length-1){time=0}
+
+        
+    },1000)
+
+
+      
+
+</script>    
+
+
+</html>
+
+
+
+   
+ 
+
+
+</body >
+
+ 
+
+
+</html>
